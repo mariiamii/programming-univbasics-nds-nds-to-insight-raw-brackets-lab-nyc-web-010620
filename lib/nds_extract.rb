@@ -19,21 +19,20 @@ def directors_totals(nds)
   #
   # Be sure to return the result at the end!
   #nil
+  
   directors_index = 0
   total = {}
   
   while directors_index < nds.length do
     name = nds[directors_index][:name]
     total[name] = 0
-    j = 0 # movie index in the hash nds
+    movie_index = 0
     
     while j<nds[directors_index][:movies].length do 
-      total[name] += nds[directors_index][:movies][j][:worldwide_gross]
-      j+=1    #onto the next movie gross
+      total[name] += nds[directors_index][:movies][movie_index][:worldwide_gross]
+      movie_index += 1
     end
-    
     directors_index += 1
-  end  
-  
+  end 
   total
 end
