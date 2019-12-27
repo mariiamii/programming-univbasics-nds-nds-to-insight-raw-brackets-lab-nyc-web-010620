@@ -19,7 +19,7 @@ def directors_totals(nds)
   #
   # Be sure to return the result at the end!
   #nil
-  directors_index = 0 #director index in the hash nds
+  directors_index = 0
   total = {}
   
   while directors_index < nds.length do
